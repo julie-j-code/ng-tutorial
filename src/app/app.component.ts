@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UsersService } from './users.service';
 
 @Component({
   selector: 'app-root',
@@ -73,5 +74,10 @@ export class AppComponent {
     // console.log(data);
     this.productsItems=data;
   }
+allUsers=[];
+  constructor(private service:UsersService) { 
+    this.allUsers=service.getAllUsers();
+  }
+  
 
 }

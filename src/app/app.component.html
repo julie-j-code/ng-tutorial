@@ -81,3 +81,8 @@
 <h2>Angular Directives</h2>
 <h3>First heading</h3>
 <h3 appHideElements>Second heading</h3>
+
+<h2>Access JSON data from a service</h2>
+<div *ngFor="let item of allUsers">
+    <p>{{item.name}}</p>
+</div>
