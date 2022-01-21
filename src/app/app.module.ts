@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UsersModule } from './users/users.module';
 import { ProductsComponent } from './products/products.component';
+import { HideElementsDirective } from './hide-elements.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    ProductsComponent
+    ProductsComponent,
+    HideElementsDirective
   ],
   imports: [
     BrowserModule,
