@@ -8,6 +8,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UsersModule } from './users/users.module';
 import { ProductsComponent } from './products/products.component';
 import { HideElementsDirective } from './hide-elements.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HideElementsDirective } from './hide-elements.directive';
     BrowserModule,
     AppRoutingModule,
     UsersModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
