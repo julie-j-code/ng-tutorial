@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { AdminModule } from "./admin/admin.module";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BlogComponent } from './components/blog/blog.component';
     AppRoutingModule,
     UsersModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
