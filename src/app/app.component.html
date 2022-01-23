@@ -42,4 +42,13 @@
   </ul>
 </div>
 <router-outlet></router-outlet>
+<h2>Reactive form</h2>
+<form [formGroup]="loginForm" class="form" (ngSubmit)="getValues()">
+  <input class="form-control mt-3" name="email" type="email" placeholder="email" formControlName="email">
+  <div *ngIf="validationsMessages.email.invalid && validationsMessages.email.touched">Please, provide valid email</div>
+  <input class="form-control mt-3" name="password" type="password" placeholder="password" formControlName="password">
+  <div *ngIf="validationsMessages.password.invalid && validationsMessages.password.touched">Please, provide password with 7 characters min</div>
+
+  <button class="btn btn-primary mt-3" type="submit">Submit</button>
+</form>
 

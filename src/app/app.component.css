@@ -9,3 +9,9 @@
 .underline{
     text-decoration: underline;
 }
+
+/* pour exploiter la classe automatique ng-valid telle qu'en l'état */
+input.ng-valid{
+    border:2px solid green}
+input.ng-invalid{
+    border:2px solid red}
