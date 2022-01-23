@@ -1,0 +1,22 @@
+<div class="container-fluid pl-4">
+    <h2>All Posts : Import data from Api</h2>
+    
+    <table class="table table-striped">
+        <thead>
+        <tr><th>Id</th>
+<th>Title</th>
+<th>Content</th></tr>
+</thead>
+<tbody>
+<tr *ngFor="let item of allPosts">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+    </tr>
+</tbody>
+    </table>
+
+    <div *ngFor="let item of allPosts">
+      <p>{{item.title}}</p>
+    </div>
+  </div>

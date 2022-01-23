@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { AdminModule } from "./admin/admin.module";
+import { PostsComponent } from './components/posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { AdminModule } from "./admin/admin.module";
     HomeComponent,
     ContactComponent,
     CoursesComponent,
-    BlogComponent
+    BlogComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { AdminModule } from "./admin/admin.module";
     UsersModule,
     FormsModule,
     NgbModule,
-    AdminModule
+    AdminModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
